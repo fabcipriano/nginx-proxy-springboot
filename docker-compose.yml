@@ -16,6 +16,7 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf
     ports:
       - "8666:8666"
+      - "8181:8181"
     depends_on:
       - springboot
     networks:
