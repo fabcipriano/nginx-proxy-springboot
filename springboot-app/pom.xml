@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>simple</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.7.5</version>
+            <version>2.7.5</version> <!-- Specify the version here -->
         </dependency>
     </dependencies>
 
@@ -20,7 +20,17 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.7.5</version>
+                <version>2.7.5</version> <!-- Specify the version here -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal> <!-- This ensures the JAR is executable -->
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>br.com.facio.simple.HelloApplication</mainClass> <!-- Specify your main class -->
+                </configuration>
             </plugin>
         </plugins>
     </build>
