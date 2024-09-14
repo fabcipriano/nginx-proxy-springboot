@@ -1,0 +1,57 @@
+# Maven target directory
+/target/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Compiled class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# IDE specific files
+/.idea/
+/*.iml
+/.vscode/
+/*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Maven specific files
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+**/mvnw
+**/mvnw.cmd
+
+# Eclipse specific files
+/.classpath
+/.project
+/.settings/
+
+# IntelliJ IDEA specific files
+/.idea/
+/*.iml
+/out/
+
+# NetBeans specific files
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code specific files
+/.vscode/
+
+# StackSpot specific ignore
+.stkignore
