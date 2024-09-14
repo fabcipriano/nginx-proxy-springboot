@@ -8,6 +8,11 @@ services:
       - "8080:8080"
     networks:
       - app-network
+    ulimits:
+      nofile:
+        soft: 2048  # Soft limit for open files
+        hard: 2048  # Hard limit for open files
+      nproc: 2048   # Limit for the number of processes
 
   nginx:
     image: nginx:1.18.0
@@ -21,6 +26,11 @@ services:
       - springboot
     networks:
       - app-network
+    ulimits:
+      nofile:
+        soft: 2048  # Soft limit for open files
+        hard: 2048  # Hard limit for open files
+      nproc: 2048   # Limit for the number of processes
 
 networks:
   app-network:
