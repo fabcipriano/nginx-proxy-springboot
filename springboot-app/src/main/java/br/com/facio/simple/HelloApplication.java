@@ -14,6 +14,11 @@ public class HelloApplication {
 
     @GetMapping("/echo")
     public String echo() {
-        return "Hello from Spring Boot!";
+        try {
+            Thread.sleep(100);
+        } catch (Exception e) {
+            /*ignored*/
+        }
+        return "Hello from Spring Boot! Sleep ...";
     }
 }
