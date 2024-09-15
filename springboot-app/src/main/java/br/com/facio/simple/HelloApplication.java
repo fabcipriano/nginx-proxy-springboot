@@ -22,7 +22,6 @@ public class HelloApplication {
     public String echo() {
         // Log the start time
         long startTime = System.currentTimeMillis();
-        logger.info("Method echo() started at: {}", startTime);
 
         try {
             Thread.sleep(100);
@@ -32,9 +31,7 @@ public class HelloApplication {
 
         // Log the end time and calculate the execution time
         long endTime = System.currentTimeMillis();
-        logger.info("Method echo() ended at: {}", endTime);
         logger.info("Method echo() executed in: {} ms", (endTime - startTime));
-
         return "Hello from Spring Boot! Sleep ...";
     }
 }
