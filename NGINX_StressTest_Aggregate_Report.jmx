@@ -11,7 +11,7 @@
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
         <intProp name="ThreadGroup.num_threads">250</intProp>
-        <intProp name="ThreadGroup.ramp_time">30</intProp>
+        <intProp name="ThreadGroup.ramp_time">20</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
@@ -21,8 +21,8 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">
-          <intProp name="HTTPSampler.connect_timeout">1000</intProp>
-          <intProp name="HTTPSampler.response_timeout">1000</intProp>
+          <intProp name="HTTPSampler.connect_timeout">30000</intProp>
+          <intProp name="HTTPSampler.response_timeout">15000</intProp>
           <stringProp name="HTTPSampler.domain">localhost</stringProp>
           <stringProp name="HTTPSampler.port">8666</stringProp>
           <stringProp name="HTTPSampler.path">/echo</stringProp>
